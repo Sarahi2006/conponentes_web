@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sobre Nosotros | Restaurante Rincón Intipuqueño</title>
+
 </head>
 <body class="bg-gradient-to-r from-blue-800 to-gray-300 min-h-screen font-sans text-white">
 <section class="container mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
             <h2 class="text-5xl font-bold mb-4">Sobre Nosotros</h2>
-            <p class="text-xl text-purple-200 mb-6"> Fundado en 2010, nuestro restaurante nació con la misión de ofrecer platillos auténticos
+            <p class="text-xl text-purple-200 mb-6">Fundado en 2010, nuestro restaurante nació con la misión de ofrecer platillos auténticos
                 con ingredientes frescos y de calidad. Creemos que cada comida es una oportunidad para
                 crear recuerdos especiales.</p>
-            <button onclick="location.href='index.html'" class=" border-4 border-double bg-gradient-to-r hover:from-sky-400 hover:to-sky-600 px-8 py-3 rounded-lg text-lg font-semibold hover:from-pink-600 hover:to-purple-700">Inicio</button>
+            <button onclick="location.href='index.html'" class="border-4 border-double bg-gradient-to-r from-sky-400 to-sky-600 px-8 py-3 rounded-lg text-lg font-semibold hover:brightness-110" aria-label="Volver al inicio">
+                Inicio
+            </button>
         </div>
     </div>
+</section>
 
-    <section class="container mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
-            <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-lg p-6 md:col-span-2 md:row-span-2 min-h-32 grid-item flex flex-col items-center border-4 border-red-700 shadow-xl">
-                <h3 class="text-xl font-bold">Nuestra Misión</h3>
-                <p class="text-gray-600 text-center">Brindar experiencias gastronómicas inolvidables con recetas tradicionales y un toque moderno.</p>
-                <img src="img/img1.jpeg" alt="Imagen de nuestra misión" class="mt-4 w-full max-w-xs rounded-lg shadow-lg">
-            </div>
-
-            <div class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg p-6 min-h-32 grid-item border-4 border-yellow-700 shadow-lg">
-                <h3 class="text-xl font-bold">Nuestra Visión</h3>
-                <p class="text-gray-600">Ser el restaurante preferido por aquellos que buscan calidad, sabor y un ambiente acogedor.</p>
-            </div>
-
-            <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-6 min-h-32 grid-item border-4 border-green-700 shadow-lg">
-                <h3 class="text-xl font-bold">Nuestros Valores</h3>
-                <ul class="list-disc list-inside text-gray-600">
-                    <li>Compromiso con la calidad</li>
-                    <li>Pasión por la cocina</li>
-                    <li>Atención excepcional</li>
-                    <li>Innovación constante</li>
-                </ul>
-            </div>
-
-            <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg p-6 md:col-span-2 min-h-32 grid-item border-4 border-blue-700 shadow-lg">
-                <div class="mt-6">
-                    <h3 class="text-xl font-bold">Nuestro Equipo</h3>
-                    <p class="text-gray-600">Contamos con un equipo diverso de ingenieros, diseñadores y estrategas que comparten una misma pasión.</p>
-                </div>
-            </div>
+<section class="container mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
+        <div class="bg-gradient-to-br from-red-500 to-pink-600 rounded-lg p-6 md:col-span-2 md:row-span-2 min-h-32 flex flex-col items-center border-4 border-red-700 shadow-xl">
+            <h3 class="text-xl font-bold">Nuestra Misión</h3>
+            <p class="text-white text-center">Brindar experiencias gastronómicas inolvidables con recetas tradicionales y un toque moderno.</p>
+            <img src="img/img1.jpeg" alt="Imagen de nuestra misión" class="mt-4 w-full max-w-xs rounded-lg shadow-lg">
         </div>
-    </section>
+
+        <div class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg p-6 min-h-32 border-4 border-yellow-700 shadow-lg">
+            <h3 class="text-xl font-bold">Nuestra Visión</h3>
+            <p class="text-white">Ser el restaurante preferido por aquellos que buscan calidad, sabor y un ambiente acogedor.</p>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg p-6 min-h-32 border-4 border-green-700 shadow-lg">
+            <h3 class="text-xl font-bold">Nuestros Valores</h3>
+            <ul class="list-disc list-inside text-white">
+                <li>Compromiso con la calidad</li>
+                <li>Pasión por la cocina</li>
+                <li>Atención excepcional</li>
+                <li>Innovación constante</li>
+            </ul>
+        </div>
+
+        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg p-6 md:col-span-2 min-h-32 border-4 border-blue-700 shadow-lg">
+            <h3 class="text-xl font-bold">Nuestro Equipo</h3>
+            <p class="text-white">Contamos con un equipo diverso de ingenieros, diseñadores y estrategas que comparten una misma pasión.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-4 mt-8">
+    <p>&copy; 2025 Restaurante Rincón Intipuqueño. Todos los derechos reservados.</p>
+</footer>
 
 </body>
 </html>

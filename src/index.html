@@ -1,118 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Restaurante</title>
+    <title>Restaurante Rincón Intipuqueño</title>
 </head>
 <body class="bg-cyan-950/50">
 <header class="bg-blue-600 text-white p-5">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="flex items-center">
             <img src="img/logo.jpeg" alt="Logo de Rincón Intipuqueño" class="w-24 h-16 object-cover rounded-full">
-            <h1 class="text-3xl font-bold ml-4">RINCON INTIPUQUEÑO</h1>
+            <h1 class="text-3xl font-bold ml-4">RINCÓN INTIPUQUEÑO</h1>
         </div>
-        <nav class="flex space-x-4">
-            <a href="#" class="bg-gradient-to-r px-4 py-2 rounded-lg text-lg font-semibold hover:from-sky-400 hover:to-sky-600">Inicio</a>
-            <a href="sobre_nosotros.html" class="bg-gradient-to-r px-4 py-2 rounded-lg text-lg font-semibold hover:from-sky-400 hover:to-sky-600">Sobre Nosotros</a>
-            <a href="menu.html" class="bg-gradient-to-r px-4 py-2 rounded-lg text-lg font-semibold hover:from-sky-400 hover:to-sky-600">Menu</a>
+        <nav aria-label="Navegación principal" class="flex space-x-4">
+            <a href="#" class="px-4 py-2 rounded-lg text-lg font-semibold bg-sky-500 hover:bg-sky-700 transition">Inicio</a>
+            <a href="sobre_nosotros.html" class="px-4 py-2 rounded-lg text-lg font-semibold bg-sky-500 hover:bg-sky-700 transition">Sobre Nosotros</a>
+            <a href="menu.html" class="px-4 py-2 rounded-lg text-lg font-semibold bg-sky-500 hover:bg-sky-700 transition">Menú</a>
         </nav>
     </div>
 </header>
 
-<section class="py-12 bg-blue-950/50 min-h-[400px] flex items-center relative">
-    <div class="absolute inset-0 bg-black/50">
-        <img src="img/section2.jpeg" alt="Platillo típico" class="w-full h-full object-cover">
-    </div>
-    <div class="relative z-10 text-center max-w-4xl mx-auto">
-        <h2 class="text-4xl font-semibold mb-4 text-stone-50 drop-shadow-lg">
+<section class="relative py-12 bg-blue-950/50 min-h-[400px] flex items-center">
+    <img src="img/section2.jpeg" alt="Platillo típico del restaurante" class="absolute inset-0 w-full h-full object-cover">
+    <div class="relative z-10 text-center max-w-4xl mx-auto bg-black/70 p-6 rounded-xl">
+        <h2 class="text-4xl font-semibold mb-4 text-white drop-shadow-lg">
             "¡Bienvenidos a nuestro rincón gastronómico, donde cada platillo cuenta una historia!"
         </h2>
-        <p class="text-lg mb-6 text-stone-50 drop-shadow-lg"><strong>Sabores auténticos</strong> que conquistan el paladar,
-            una experiencia única en cada bocado.</p>
-    </div>
-</section>
-
-<section class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center mb-12">Eventos Próximos</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
-        <div class="bg-gradient-to-br from-sky-400 to-indigo-600 p-6 rounded-xl border-4 border-sky-600 shadow-xl">
-            <h3 class="text-white font-bold mb-3">&#128197; 14 Febrero:</h3>
-            <p class="text-purple-200">Cena romántica de San Valentín</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-sky-700 to-indigo-900 p-6 rounded-xl border-4 border-sky-800 shadow-lg">
-            <h3 class="text-white font-bold mb-3">&#128197; 20 Febrero:</h3>
-            <p class="text-indigo-200">Inauguración del restaurante</p>
-        </div>
-        <div class="bg-gradient-to-br from-sky-400 to-indigo-600 p-6 rounded-xl border-4 border-sky-600 shadow-lg">
-            <h3 class="text-white font-bold mb-3">&#128197; 28 Febrero:</h3>
-            <p class="text-blue-200">Noche de karaoke con premios para los mejores cantantes.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-sky-700 to-indigo-900 p-6 rounded-xl border-4 border-sky-800 shadow-xl">
-            <h3 class="text-white font-bold mb-3">&#128197; 10 Marzo:</h3>
-            <p class="text-pink-200">Taller de cocina con nuestro chef invitado.</p>
+        <p class="text-lg text-white drop-shadow-lg mb-6"> <!-- Añadí mb-6 para separar el párrafo del botón -->
+            <strong>Puedes ver aquí nuestro calendario de eventos especiales para este mes.</strong>
+        </p>
+        <div  href="./eventos.html" class="text-center mt-8">
+            <a href="./eventos.html" class="border-4 border-double bg-gradient-to-r from-sky-400 to-sky-600 px-8 py-3 rounded-lg text-lg font-semibold text-white hover:brightness-110 transition">
+                Mas
+            </a>
         </div>
     </div>
 </section>
 
-<section class="container mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center mb-12">Ofertas Especiales</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
-        <div class="bg-gradient-to-br from-sky-700 to-indigo-900 p-6 rounded-xl border-4 border-sky-800 shadow-lg">
-            <h3 class="text-white font-bold mb-3">Especialidad</h3>
-            <p class="text-purple-200">10 Pupusas + 4 tazas de chilate a precio rebajado</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-sky-400 to-indigo-600 p-6 rounded-xl border-4 border-sky-600 shadow-lg">
-            <h3 class="text-white font-bold mb-3">Frecuente</h3>
-            <p class="text-indigo-200">2 Pupusas + bebida gratis</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-sky-700 to-indigo-900 p-6 rounded-xl border-4 border-sky-800 shadow-xl">
-            <h3 class="text-white font-bold mb-3">Familiar</h3>
-            <p class="text-blue-200">Combo de 20 pupusas + 6 bebidas naturales a precio especial.</p>
-        </div>
-
-        <div class="bg-gradient-to-br from-sky-400 to-indigo-600 p-6 rounded-xl border-4 border-sky-600 shadow-lg">
-            <h3 class="text-white font-bold mb-3">Desayuno Especial</h3>
-            <p class="text-pink-200">Café + 2 empanadas de plátano con miel por un precio reducido.</p>
-        </div>
-    </div>
-</section>
-
-<footer class="mt-20 py-10 bg-blue-900 bg-opacity-60 text-purple-200">
+<footer class="mt-20 py-10 bg-blue-900 bg-opacity-60 text-white">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-purple-700 pb-8">
-            <div class="md:col-span-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border-b border-purple-500 pb-8">
+            <div>
                 <h3 class="text-xl font-bold mb-4">Contacto y Ubicación</h3>
-                <p><strong>📍Dirección:</strong> Parque central los emigrantes Intipuca</p>
-                <p><strong>📞Teléfono:</strong> +503 7098-4090</p>
-                <p><strong>📧Email:</strong> rinconintipuqueño@gmail.com</p>
+                <p><strong>📍 Dirección:</strong> Parque central Los Emigrantes, Intipucá</p>
+                <p><strong>📞 Teléfono:</strong> +503 7098-4090</p>
+                <p><strong>📧 Email:</strong> rinconintipuqueno@gmail.com</p>
             </div>
-
-            <div class="md:col-span-3 flex flex-col md:flex-row justify-between">
-                <div class="text-center md:text-left">
-                    <h4 class="font-bold mb-4">Síguenos en:</h4>
-                    <div class="flex justify-center md:justify-start space-x-6 border-t border-purple-700 pt-4">
-                        <a href="#" aria-label="Facebook"><img src="img/facebook.jpg" alt="Facebook" width="40"></a>
-                        <a href="#" aria-label="Instagram"><img src="img/instagram.jpg" alt="Instagram" width="40"></a>
-                        <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.jpg" alt="WhatsApp" width="40"></a>
-                        <a href="#" aria-label="TikTok"><img src="img/tiktok.jpg" alt="TikTok" width="40"></a>
-                    </div>
+            <div>
+                <h4 class="font-bold mb-4">Síguenos en:</h4>
+                <div class="flex space-x-6 border-t border-purple-500 pt-4">
+                    <a href="#" aria-label="Facebook"><img src="img/facebook.jpg" alt="Síguenos en Facebook" width="40"></a>
+                    <a href="#" aria-label="Instagram"><img src="img/instagram.jpg" alt="Síguenos en Instagram" width="40"></a>
+                    <a href="#" aria-label="WhatsApp"><img src="img/whatsapp.jpg" alt="Contáctanos en WhatsApp" width="40"></a>
+                    <a href="#" aria-label="TikTok"><img src="img/tiktok.jpg" alt="Síguenos en TikTok" width="40"></a>
                 </div>
             </div>
         </div>
-
-        <div class="mt-8 pt-4 text-center text-purple-300">
+        <div class="mt-8 text-center text-purple-200">
             <p>&copy; 2025 Todos los derechos reservados</p>
         </div>
     </div>
 </footer>
-
 </body>
 </html>
