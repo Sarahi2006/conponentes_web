@@ -8,19 +8,20 @@
 </head>
 <body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
 
-<!-- Barra de navegación -->
-<nav class="bg-blue-500 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <a href="./index.html" class="text-white text-lg font-semibold">Inicio</a>
-        <a href="./ofertas.html" class="text-white text-lg font-semibold">Ofertas Especiales</a>
-        <a href="./eventos.html" class="text-white text-lg font-semibold">Eventos Especiales</a>
-    </div>
-</nav>
-
 <!-- Título de la página -->
 <header class="bg-blue-600 text-white text-center py-12">
-    <h1 class="text-4xl font-bold">Eventos Especiales</h1>
-    <p class="mt-4 text-lg">Únete a nosotros en estos eventos especiales y disfruta de momentos únicos.</p>
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div>
+            <h1 class="text-4xl font-bold">Eventos Especiales</h1>
+            <p class="mt-4 text-lg">Únete a nosotros en estos eventos especiales y disfruta de momentos únicos.</p>
+        </div>
+        <!-- Barra de navegación -->
+        <nav class=" p-4 space-x-4 text-white">
+                <a href="./index.html" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-700 transition">Inicio</a>
+                <a href="./ofertas.html" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-700 transition">Ofertas Especiales</a>
+                <a href="./eventos.html" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-700 transition">Eventos Especiales</a>
+        </nav>
+    </div>
 </header>
 
 <!-- Sección de Eventos -->
