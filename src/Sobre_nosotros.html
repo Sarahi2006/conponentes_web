@@ -9,43 +9,43 @@
 </head>
 
 <body class="flex flex-col min-h-screen bg-gray-300 text-gray-800 font-sans">
-    <!-- Barra de navegación -->
-    <nav class="bg-blue-500 p-4">
-        <div class="container mx-auto flex justify-end space-x-4"> <!-- Utilizamos 'space-x-4' para espacios entre los elementos -->
-            <a href="./index.html" class="text-white text-lg font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition" aria-label="Ir a la página de inicio">Inicio</a>
-            <a href="./servicios.html" class="text-white text-lg font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition" aria-label="Ir a la página de servicios">Servicios</a>
-        </div>
-    </nav>
+<!-- Encabezado principal -->
+    <header class="bg-blue-600 text-white p-5">
+        <!-- Contenedor para centrar el contenido -->
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo y Título -->
+            <div class="flex items-center">
+                <!-- Logo del restaurante -->
+                <img src="img/logo.jpeg" alt="Logo del Restaurante Rincón Intipuqueño" class="w-24 h-16 object-cover rounded-full">
+                <h1 class="text-3xl font-bold ml-4">Sobre Nosotros</h1>
+            </div>
 
-    <!-- Título de la página -->
-    <header class="bg-blue-600 text-white text-center py-12">
-        <h1 class="text-4xl font-bold">Sobre Nosotros</h1>
-        <p class="mt-4 text-lg">
-            Fundado en 2010, nuestro restaurante nació
-            con la misión de ofrecer platillos auténticos
-            <br> con ingredientes frescos y de calidad. Creemos que cada comida es una oportunidad para
-            crear recuerdos especiales.
-        </p>
+            <!-- Navegación -->
+            <nav class="flex space-x-4">
+                <a href="./index.html" class="text-white text-lg font-semibold ml-4 px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition">Inicio</a>
+                <a href="./servicios.html" class="text-white text-lg font-semibold ml-4 px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition">Servicios</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Sección principal de contenido -->
     <section class="container mx-auto px-4 py-16">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-12">
             <!-- Bloque de Nuestra Misión -->
-            <div class="bg-gradient-to-br from-indigo-700 to-blue-500 rounded-lg p-6 md:col-span-2 md:row-span-2 min-h-32 flex flex-col items-center border-4 border-indigo-900 shadow-xl">
+            <div class="bg-gradient-to-br from-indigo-700 to-blue-500 text-white rounded-lg p-6 md:col-span-2 md:row-span-2 min-h-32 flex flex-col items-center border-4 border-indigo-900 shadow-xl">
                 <h3 class="text-xl font-bold">Nuestra Misión</h3>
                 <p class="text-white text-center">Brindar experiencias gastronómicas inolvidables con recetas tradicionales y un toque moderno.</p>
                 <img src="img/img1.jpeg" alt="Imagen de nuestra misión" class="mt-4 w-full max-w-xs rounded-lg shadow-lg">
             </div>
 
             <!-- Bloque de Nuestra Visión -->
-            <div class="bg-gradient-to-br from-cyan-600 to-teal-500 rounded-lg p-6 min-h-32 border-4 border-cyan-800 shadow-lg">
+            <div class="bg-gradient-to-br from-cyan-600 to-teal-500 text-white rounded-lg p-6 min-h-32 border-4 border-cyan-800 shadow-lg">
                 <h3 class="text-xl font-bold">Nuestra Visión</h3>
                 <p class="text-white">Ser el restaurante preferido por aquellos que buscan calidad, sabor y un ambiente acogedor.</p>
             </div>
 
             <!-- Bloque de Nuestros Valores -->
-            <div class="bg-gradient-to-br from-blue-600 to-indigo-500 rounded-lg p-6 min-h-32 border-4 border-blue-800 shadow-lg">
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-500 text-white rounded-lg p-6 min-h-32 border-4 border-blue-800 shadow-lg">
                 <h3 class="text-xl font-bold">Nuestros Valores</h3>
                 <ul class="list-disc list-inside text-white">
                     <li>Compromiso con la calidad</li>
@@ -56,7 +56,7 @@
             </div>
 
             <!-- Bloque de Nuestro Equipo -->
-            <div class="bg-gradient-to-br from-gray-700 to-gray-500 rounded-lg p-6 md:col-span-2 min-h-32 border-4 border-gray-900 shadow-lg">
+            <div class="bg-gradient-to-br from-gray-700 to-gray-500 text-white rounded-lg p-6 md:col-span-2 min-h-32 border-4 border-gray-900 shadow-lg">
                 <h3 class="text-xl font-bold">Nuestro Equipo</h3>
                 <p class="text-white">Contamos con un equipo diverso de ingenieros, diseñadores y estrategas que comparten una misma pasión.</p>
             </div>
