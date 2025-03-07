@@ -3,58 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Menú del Restaurante Rincón Intipuqueño. Disfruta de nuestras deliciosas pupusas, sopas, ensaladas y más.">
-  <script src="https://cdn.tailwindcss.com"></script>+
-  <title>Servicios | Restaurante Rincón Intipuqueño</title>
+  <title>Servicios del Restaurante</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-b from-cyan-900 to-gray-100 min-h-screen flex flex-col">
+<body id="top" class="flex flex-col min-h-screen bg-gray-300 text-gray-800 font-sans">
 
-<!-- Header -->
-<header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-6">
-  <h1 class="text-4xl font-bold">Menú del Restaurante</h1>
-</header>
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-500 p-4">
+      <div class="container mx-auto flex justify-end">
+        <!-- Enlaces de navegación -->
+        <a href="./index.html" class="text-white text-lg font-semibold ml-4 px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition">Inicio</a>
+        <a href="./sobre_nosotros.html" class="text-white text-lg font-semibold ml-4 px-4 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition">Sobre Nosotros</a>
+      </div>
+    </nav>
 
-<!-- Contenedor Principal -->
-<div class="container mx-auto px-4 py-8 flex-grow">
-  <!-- Menú -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <!-- Platillo 1 -->
-    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-      <img src="img/img4.jpeg" alt="Pupusas de queso y chicharrón servidas con curtido y salsa de tomate" class="rounded-lg mb-4 w-full h-48 object-cover">
-      <h3 class="text-xl font-bold">Pupusas</h3>
-      <p class="text-gray-600">Deliciosas pupusas de queso y chicharrón con curtido.</p>
-      <p class="text-red-500 font-bold mt-2">$2.00 cada una</p>
-    </div>
+    <!-- Encabezado principal -->
+    <header class="bg-blue-600 text-white text-center py-12">
+      <h1 class="text-4xl font-bold">Nuestros Servicios</h1>
+      <p class="mt-4 text-lg">Descubre todo lo que ofrecemos para que disfrutes de una experiencia única en nuestro restaurante.</p>
+    </header>
 
-    <!-- Platillo 2 -->
-    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-      <img src="img/img2.jpeg" alt="Sopa de res con vegetales y yuca en un tazón caliente" class="rounded-lg mb-4 w-full h-48 object-cover">
-      <h3 class="text-xl font-bold">Sopa de Res</h3>
-      <p class="text-gray-600">Caldo tradicional con vegetales, carne de res y yuca.</p>
-      <p class="text-red-500 font-bold mt-2">$5.50</p>
-    </div>
+    <!-- Sección de Servicios -->
+    <main class="container mx-auto px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Servicio 1: Ambiente Acogedor -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Ambiente Acogedor</h3>
+          <p class="text-gray-600 mb-4">En nuestro restaurante, disfrutarás de un ambiente cómodo y relajante, perfecto para compartir con familia y amigos. Tenemos zonas para todo tipo de eventos, desde cenas familiares hasta reuniones empresariales.</p>
+          <img src="img/restaurante.jpeg" alt="Ambiente del restaurante, ideal para cenas familiares o reuniones" class="rounded-lg mb-4 w-full h-48 object-cover">
+        </div>
 
-    <!-- Platillo 3 -->
-    <div class="bg-white p-4 rounded-lg shadow-lg text-center">
-      <img src="img/img3.jpeg" alt="Ensalada de frutas de temporada con miel y yogurt" class="rounded-lg mb-4 w-full h-48 object-cover">
-      <h3 class="text-xl font-bold">Ensalada de Frutas</h3>
-      <p class="text-gray-600">Refrescante ensalada con frutas de temporada y miel.</p>
-      <p class="text-red-500 font-bold mt-2">$3.00</p>
-    </div>
-  </div>
-</div>
+        <!-- Servicio 2: Atención Personalizada -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Atención Personalizada</h3>
+          <p class="text-gray-600 mb-4">Nuestro equipo está comprometido a ofrecerte una atención de primera. Desde el momento en que llegas, nuestro personal se asegurará de que tu experiencia sea agradable y única.</p>
+          <img src="img/atencion.jpeg" alt="Personal brindando atención a los clientes" class="rounded-lg mb-4 w-full h-48 object-cover">
+        </div>
 
-<!-- Botón "Regresar al Inicio" -->
-<div class="text-center mt-6 mb-8">
-  <a href="index.html" class="border-4 border-double bg-gradient-to-r from-sky-400 to-sky-600 px-8 py-3 rounded-lg text-lg font-semibold text-white hover:brightness-110 transition">
-    Regresar al Inicio
-  </a>
-</div>
+        <!-- Servicio 3: Eventos Especiales -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Eventos Especiales</h3>
+          <p class="text-gray-600 mb-4">Ofrecemos la organización de eventos especiales como bodas, aniversarios y celebraciones. Nuestro equipo de planificación se encargará de todos los detalles para que tu evento sea inolvidable.</p>
+          <img src="img/eventos.jpeg" alt="Evento especial organizado en el restaurante" class="rounded-lg mb-4 w-full h-48 object-cover">
+        </div>
 
-<!-- Footer -->
-<footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-4 mt-auto">
-  <p>&copy; 2025 Restaurante Rincón Intipuqueño. Todos los derechos reservados.</p>
-</footer>
+        <!-- Servicio 4: Comida para Llevar -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Comida para Llevar</h3>
+          <p class="text-gray-600 mb-4">Si prefieres disfrutar de nuestra comida en casa, ofrecemos opciones para llevar. Escoge tu platillo favorito y llévalo contigo para saborear en cualquier lugar.</p>
+          <img src="img/comida.jpeg" alt="Comida lista para llevar, empaquetada para llevar" class="rounded-lg mb-4 w-full h-48 object-cover">
+        </div>
+
+        <!-- Servicio 5: Servicio a Domicilio -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Servicio a Domicilio</h3>
+          <p class="text-gray-600 mb-4">Si prefieres disfrutar de nuestra comida sin salir de casa, tenemos servicio a domicilio. ¡Haz tu pedido y te lo llevamos directamente a tu puerta!</p>
+          <img src="img/adomicilio.jpeg" alt="Repartidor llevando comida a domicilio" class="rounded-lg mb-4 w-full h-48 object-cover">
+        </div>
+
+        <!-- Servicio 6: Catering para Empresas -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Catering para Empresas</h3>
+          <p class="text-gray-600 mb-4">Brindamos servicios de catering para empresas, asegurándonos de que tu evento corporativo sea un éxito. Ofrecemos menús personalizados que se adaptan a tus necesidades y presupuesto.</p>
+          <img src="img/catering.jpeg" alt="Catering para empresas en evento corporativo" class="rounded-lg mb-4 w-full h-48 object-cover">
+        </div>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-gradient-to-r from-gray-800 to-blue-700 text-white text-center py-4 mt-8">
+      <p>&copy; 2025 Restaurante Rincón Intipuqueño. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón para Volver Arriba -->
+    <a href="#top" class="fixed bottom-8 right-8 z-50 bg-blue-600 text-white p-4 rounded-full shadow-lg opacity-100 hover:bg-blue-800 active:bg-blue-500 transition-colors duration-300" aria-label="Volver arriba">
+      ↑
+    </a>
 
 </body>
 </html>

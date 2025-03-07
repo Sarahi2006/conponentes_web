@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!-- Define el conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para la responsividad -->
     <title>Eventos Especiales</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Carga Tailwind CSS -->
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-800">
 
 <!-- Barra de navegación -->
 <nav class="bg-blue-500 p-4">
@@ -72,5 +72,9 @@
     <p>&copy; 2025 Restaurante Rincón Intipuqueño. Todos los derechos reservados.</p>
 </footer>
 
+<!-- Botón para Volver Arriba -->
+<a href="#top" class="fixed bottom-8 right-8 z-50 bg-blue-600 text-white p-4 rounded-full shadow-lg opacity-100 hover:bg-blue-800 active:bg-blue-500 transition-colors duration-300">
+    ↑
+</a>
 </body>
 </html>
